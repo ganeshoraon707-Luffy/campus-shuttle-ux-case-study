@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Campus Shuttle Problem — A UX Case Study</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Shuttle<span>/</span>Study</a>
+    <nav aria-label="Case study sections">
+      <a href="#problem"><span class="tab-dot dot-p0"></span>Problem</a>
+      <a href="#phase1"><span class="tab-dot dot-p1"></span>Phase 1</a>
+      <a href="#phase2"><span class="tab-dot dot-p2"></span>Phase 2</a>
+      <a href="#phase3"><span class="tab-dot dot-p3"></span>Phase 3</a>
+      <a href="#mvp"><span class="tab-dot dot-p4"></span>Final MVP</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Field Notebook · UX Research Case Study</p>
+    <h1>The Campus Shuttle<br>Waiting Problem</h1>
+    <p class="hero-lede">
+      A research-first UX case study tracing the campus shuttle service from a broken,
+      unpredictable daily commute to a prioritized, evidence-based set of digital
+      must-haves — following empathize, define, ideate, evaluate and prioritize,
+      in that order.
+    </p>
+    <div class="hero-meta">
+      <div><span class="label">Broken experience</span>Campus shuttle delays &amp; uncertainty</div>
+      <div><span class="label">Researcher</span>Ganesh Oraon · 2024SEPVUAP0096</div>
+      <div><span class="label">Method</span>Field observation → persona → journey → IA → prioritization</div>
+    </div>
+    <a class="hero-cta" href="#problem">Begin at the problem space ↓</a>
+  </div>
+  <div class="hero-strip" aria-hidden="true">
+    <span>OBSERVE</span><span>·</span><span>DEFINE</span><span>·</span><span>IDEATE</span><span>·</span><span>EVALUATE</span><span>·</span><span>PRIORITIZE</span><span>·</span>
+    <span>OBSERVE</span><span>·</span><span>DEFINE</span><span>·</span><span>IDEATE</span><span>·</span><span>EVALUATE</span><span>·</span><span>PRIORITIZE</span><span>·</span>
+  </div>
+</section>
+
+<!-- ============ PROBLEM SPACE ============ -->
+<section class="section" id="problem">
+  <div class="section-inner narrow">
+    <p class="kicker">Before any solution</p>
+    <h2>Problem Space</h2>
+    <p class="lead-text">
+      The campus shuttle service is an important mode of transportation for many students,
+      especially day boarders who depend on it to travel between the campus and nearby
+      transport points. During daily commuting, students often experience delays,
+      uncertainty, and difficulty obtaining reliable information about the shuttle
+      service. These issues affect their punctuality, daily planning, and overall
+      commuting experience.
+    </p>
+    <div class="callout callout-warn">
+      <strong>Note on process:</strong> at this stage no app, feature, or solution
+      has been proposed. The problem is physical and experiential — the research below
+      exists to understand it before deciding whether, or how, to respond to it.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHASE 1 DIVIDER ============ -->
+<div class="phase-divider phase-1" id="phase1">
+  <div class="phase-divider-inner">
+    <span class="phase-num">Phase 01</span>
+    <h2>Empathize &amp; Define</h2>
+    <p>Understand real users before assuming what they need.</p>
+  </div>
+</div>
+
+<!-- ============ RESEARCH METHODOLOGY ============ -->
+<section class="section alt" id="research">
+  <div class="section-inner">
+    <p class="kicker">Methodology</p>
+    <h2>Research Approach</h2>
+    <p class="lead-text">
+      Rather than starting from a proposed solution, research began with direct field
+      observation of real students using the shuttle service — treated as objectively
+      as watching CCTV footage with audio: recording only what was directly visible or heard. 
+      Thoughts and feelings were interpreted later during the Empathy Map and Journey Map synthesis.
+    </p>
+    <div class="meta-grid">
+      <div class="meta-card">
+        <span class="meta-num">01</span>
+        <h3>Location</h3>
+        <p>Campus Shuttle Stop, Vijaybhoomi University</p>
+      </div>
+      <div class="meta-card">
+        <span class="meta-num">02</span>
+        <h3>Duration</h3>
+        <p>2:13 PM – 2:46 PM, a single continuous observation window</p>
+      </div>
+      <div class="meta-card">
+        <span class="meta-num">03</span>
+        <h3>Participants</h3>
+        <p>3 real students — 2 male day-boarders and 1 female hostel student</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROTO PERSONA ============ -->
+<section class="section alt" id="proto-persona">
+  <div class="section-inner">
+    <p class="kicker">Exhibit A · Assumption</p>
+    <h2>Proto Persona</h2>
+    <p class="lead-text small">
+      Before field data was synthesized, a proto-persona was sketched from initial
+      assumptions about who the user might be. This is explicitly a starting
+      hypothesis, not a research finding.
+    </p>
+    <div class="evidence-layout reverse">
+      <figure class="artefact">
+        <a href="#lb-proto" class="thumb-link">
+          <img src="images/proto-persona.jpg" alt="Handwritten Phase 1 problem space and proto persona notes for a fictional day boarder named Pralhad">
+          <span class="enlarge-tag">Click to enlarge</span>
+        </a>
+        <figcaption>Proto-persona &amp; problem space, notebook page 1</figcaption>
+      </figure>
+      <div class="evidence-text">
+        <table class="persona-table">
+          <tbody>
+            <tr><th>Name</th><td>Pralhad <em>(assumed)</em></td></tr>
+            <tr><th>Age</th><td>20 years</td></tr>
+            <tr><th>Occupation</th><td>Second-year B.Tech student</td></tr>
+            <tr><th>User type</th><td>Day boarder</td></tr>
+          </tbody>
+        </table>
+        <h4>Assumed goals</h4>
+        <ul>
+          <li>Reach campus on time</li>
+          <li>Reach home without delays</li>
+          <li>Use the campus shuttle for daily travel</li>
+        </ul>
+        <h4>Assumed pain points</h4>
+        <ul>
+          <li>Shuttle may arrive late</li>
+          <li>Long waiting time</li>
+          <li>Uncertainty about shuttle arrival</li>
+          <li>Difficulty planning travel due to delays</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBSERVATION LOG ============ -->
+<section class="section" id="observation-log">
+  <div class="section-inner">
+    <p class="kicker">Exhibit B · Research-based</p>
+    <h2>Observation Log</h2>
+    <div class="evidence-layout">
+      <figure class="artefact">
+        <a href="#lb-observation" class="thumb-link">
+          <img src="images/observation-log.jpg" alt="Handwritten observation log describing three students waiting at the Vijaybhoomi University campus shuttle stop between 2:13 PM and 2:46 PM">
+          <span class="enlarge-tag">Click to enlarge</span>
+        </a>
+        <figcaption>Original observation log, campus shuttle stop, 2:13–2:46 PM</figcaption>
+      </figure>
+      <div class="evidence-text">
+        <p>
+          Three students were present at the campus shuttle stop. Two were male
+          day-boarders and one was a female hostel student. They arrived at 2:13 PM,
+          two minutes before the scheduled shuttle arrival time of 2:15 PM, and waited
+          near the stop.
+        </p>
+        <p>
+          The shuttle did not arrive at the scheduled time. After a few minutes, the two
+          male students approached the security guard to ask about the shuttle and then
+          returned to the waiting area. During this time, the female student checked her
+          phone several times while waiting.
+        </p>
+        <p>
+          After waiting for around 20 minutes, the female student asked,
+          <span class="quote">“Does this bus always get late?”</span> One of the male
+          students replied, <span class="quote">“Yeah, it's an all-time problem.”</span>
+          The students continued waiting until the shuttle arrived at approximately
+          2:45 PM, around 30 minutes later than its scheduled arrival time. They
+          immediately boarded the shuttle, and it departed shortly afterwards.
+        </p>
+        <div class="observation-tag">Objective record — no interpretation applied here</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USER PERSONA ============ -->
+<section class="section" id="user-persona">
+  <div class="section-inner">
+    <p class="kicker">Exhibit C · Research-based</p>
+    <h2>User Persona</h2>
+    <p class="lead-text small">
+      After the field observation, the proto-persona was replaced with a persona
+      grounded in what was actually observed and heard at the shuttle stop.
+    </p>
+    <div class="evidence-layout">
+      <figure class="artefact">
+        <a href="#lb-persona1" class="thumb-link">
+          <img src="images/user-persona-1.jpg" alt="Handwritten user persona for Sahil Deshmukh, a second-year B.Tech day-boarder student, with goals and behaviours">
+          <span class="enlarge-tag">Click to enlarge</span>
+        </a>
+        <figcaption>User persona — Sahil Deshmukh (page 1)</figcaption>
+      </figure>
+      <div class="evidence-text">
+        <table class="persona-table">
+          <tbody>
+            <tr><th>Name</th><td>Sahil Deshmukh</td></tr>
+            <tr><th>Age</th><td>20 years</td></tr>
+            <tr><th>Occupation</th><td>Second-year B.Tech student</td></tr>
+            <tr><th>User type</th><td>Day-boarder</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Sahil is a 2nd-year day-boarder who depends on the campus shuttle service
+          every day to travel between the university and the railway station. Since he
+          relies on public transport after using the shuttle, delays in the shuttle
+          directly affect his travel schedule and often result in reaching home late.
+        </p>
+        <h4>Goals</h4>
+        <ul>
+          <li>Reach home on time</li>
+          <li>Catch the train without rushing</li>
+          <li>Travel using the campus shuttle safely and conveniently</li>
+          <li>Reduce unnecessary waiting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="evidence-layout reverse" style="margin-top:2.5rem;">
+      <figure class="artefact">
+        <a href="#lb-persona2" class="thumb-link">
+          <img src="images/user-persona-2.jpg" alt="Handwritten user persona continued, listing pain points and needs for the shuttle service">
+          <span class="enlarge-tag">Click to enlarge</span>
+        </a>
+        <figcaption>User persona — pain points &amp; needs (page 2)</figcaption>
+      </figure>
+      <div class="evidence-text">
+        <h4>Behaviours</h4>
+        <ul>
+          <li>Arrives at the shuttle stop before the scheduled time</li>
+          <li>Waits patiently for the shuttle</li>
+          <li>Checks his phone while waiting</li>
+          <li>Asks the security guard when the shuttle is delayed</li>
+          <li>Travels using the shuttle regularly</li>
+        </ul>
+        <h4>Pain points</h4>
+        <ul>
+          <li>Shuttle frequently arrives late</li>
+          <li>No reliable information about shuttle arrival</li>
+          <li>Long waiting time</li>
+          <li>Delays affect the rest of his journey</li>
+        </ul>
+        <h4>Needs</h4>
+        <ul>
+          <li>Reliable information about the shuttle</li>
+          <li>A predictable travel experience</li>
+          <li>Better communication when delays occur</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMPATHY MAP ============ -->
+<section class="section alt" id="empathy-map">
+  <div class="section-inner">
+    <p class="kicker">Exhibit D</p>
+    <h2>Empathy Map</h2>
+    <div class="evidence-layout">
+      <figure class="artefact">
+        <a href="#lb-empathy" class="thumb-link">
+          <img src="images/empathy-map.jpg" alt="Handwritten empathy map with four quadrants: Says, Thinks, Does, and Feels">
+          <span class="enlarge-tag">Click to enlarge</span>
+        </a>
+        <figcaption>Empathy map, drawn directly from the observation log</figcaption>
+      </figure>
+      <div class="empathy-grid">
+        <div class="empathy-quad">
+          <h4>Says</h4>
+          <ul>
+            <li>“Does this bus always get late?”</li>
+            <li>“Yeah, it's an all-time problem.”</li>
+          </ul>
+        </div>
+        <div class="empathy-quad">
+          <h4>Thinks</h4>
+          <ul>
+            <li>“Why hasn't the shuttle arrived yet?”</li>
+            <li>“How much longer will I have to wait?”</li>
+            <li>“Will I be late for home because of the delay?”</li>
+          </ul>
+        </div>
+        <div class="empathy-quad">
+          <h4>Does</h4>
+          <ul>
+            <li>Arrives before the scheduled time</li>
+            <li>Waits at the shuttle stop</li>
+            <li>Asks security guard about the shuttle</li>
+            <li>Checks phone while waiting</li>
+            <li>Boards the shuttle immediately after it arrives</li>
+          </ul>
+        </div>
+        <div class="empathy-quad">
+          <h4>Feels</h4>
+          <ul>
+            <li>Frustrated</li>
+            <li>Impatient</li>
+            <li>Uncertain</li>
+            <li>Anxious</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY MAP ============ -->
+<section class="section" id="journey-map">
+  <div class="section-inner">
+    <p class="kicker">Exhibit E</p>
+    <h2>User Journey Map</h2>
+    <figure class="artefact wide">
+      <a href="#lb-journey" class="thumb-link">
+        <img src="images/journey-map.jpg" alt="Handwritten user journey map with five stages: Arrive, Wait, Ask, Shuttle Arrives, Board, and an emotion line beneath it">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>Journey map across five stages, with emotion line</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table class="journey-table">
+        <thead>
+          <tr><th>Stage</th><th>Arrive</th><th>Wait</th><th>Ask</th><th>Shuttle Arrives</th><th>Board</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Does</th>
+            <td>Arrives at the shuttle stop before 2:15 PM</td>
+            <td>Waits for the shuttle, checks phone</td>
+            <td>Asks the security guard about the shuttle</td>
+            <td>Notices the shuttle arriving after a long wait</td>
+            <td>Boards the shuttle &amp; leaves</td>
+          </tr>
+          <tr>
+            <th>Thinks</th>
+            <td>“The shuttle should arrive on time”</td>
+            <td>“Why hasn't the shuttle arrived yet?”</td>
+            <td>“When will it come?”</td>
+            <td>“Finally, it's here.”</td>
+            <td>“I hope I won't be late now.”</td>
+          </tr>
+          <tr>
+            <th>Feels</th>
+            <td>Calm</td>
+            <td class="cell-low">Uncertain</td>
+            <td class="cell-low">Frustrated</td>
+            <td>Relieved</td>
+            <td>Satisfied</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="lowest-point-callout">
+      <span class="lp-marker">▼ Lowest emotional point</span>
+      <p>
+        The emotion line drops sharply during the <strong>Wait</strong> and
+        <strong>Ask</strong> stages — the period with no information and no way to
+        know how much longer the wait will last. This is the single lowest point of
+        the entire journey.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORE PAIN POINT ============ -->
+<section class="section alt" id="pain-point">
+  <div class="section-inner narrow">
+    <p class="kicker">Exhibit F · Derived from the journey map</p>
+    <h2>Core Pain Point</h2>
+    <blockquote class="pain-point-quote">
+      Students face long waiting times &amp; uncertainty due to frequent shuttle
+      delays &amp; the lack of reliable arrival information.
+    </blockquote>
+    <p class="lead-text small">
+      This statement — and not a solution — is the output of Phase 1. It is the single
+      problem the rest of this case study responds to.
+    </p>
+  </div>
+</section>
+
+<!-- ============ USER STORIES ============ -->
+<section class="section" id="user-stories">
+  <div class="section-inner">
+    <p class="kicker">Exhibit F (cont.)</p>
+    <h2>User Stories</h2>
+    <figure class="artefact wide">
+      <a href="#lb-stories" class="thumb-link">
+        <img src="images/pain-point-stories.jpg" alt="Handwritten core pain point and three user stories written by the researcher">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>Core pain point &amp; three user stories, written directly from the journey map findings</figcaption>
+    </figure>
+    <div class="story-grid">
+      <div class="story-card">
+        <span class="story-num">1</span>
+        <p>As a student, I want timely shuttle updates so that I can reach home on time.</p>
+      </div>
+      <div class="story-card">
+        <span class="story-num">2</span>
+        <p>As a day-boarder who depends on the campus shuttle, I want to know its expected arrival time so that I can plan my journey &amp; avoid unnecessary waiting.</p>
+      </div>
+      <div class="story-card">
+        <span class="story-num">3</span>
+        <p>As a shuttle user, I want to know when the shuttle is delayed so that I can manage my time &amp; avoid disruptions to my travel schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHASE 2 DIVIDER ============ -->
+<div class="phase-divider phase-2" id="phase2">
+  <div class="phase-divider-inner">
+    <span class="phase-num">Phase 02</span>
+    <h2>Ideate &amp; Evaluate</h2>
+    <p>Generate content from the user stories, then test it with real people.</p>
+  </div>
+</div>
+
+<!-- ============ FEATURES ============ -->
+<section class="section alt" id="features">
+  <div class="section-inner">
+    <p class="kicker">Exhibit G</p>
+    <h2>Feature / Content List</h2>
+    <p class="lead-text small">
+      Twenty candidate content items were generated directly from the three user
+      stories above — only after the user's needs were understood.
+    </p>
+    <figure class="artefact wide">
+      <a href="#lb-features" class="thumb-link">
+        <img src="images/features.jpg" alt="Handwritten list of twenty shuttle-related content and feature items">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>20 candidate content items, Phase 2</figcaption>
+    </figure>
+    <ol class="feature-list">
+      <li>Shuttle Schedule</li>
+      <li>Expected Arrival Time</li>
+      <li>Current Shuttle Status</li>
+      <li>Delay Information</li>
+      <li>Next Shuttle Information</li>
+      <li>Shuttle Route</li>
+      <li>Shuttle Stops</li>
+      <li>Estimated Travel Time</li>
+      <li>Delay Notifications</li>
+      <li>Shuttle Arrival Alerts</li>
+      <li>Schedule Change Alerts</li>
+      <li>Service Announcements</li>
+      <li>Journey Planner</li>
+      <li>Train Timing Information</li>
+      <li>Trip Planning</li>
+      <li>Alternative Travel Information</li>
+      <li>Frequently Asked Questions</li>
+      <li>Contact / Help</li>
+      <li>Shuttle Rules</li>
+      <li>Feedback / Report an Issue</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CARD SORT ============ -->
+<section class="section" id="card-sort">
+  <div class="section-inner">
+    <p class="kicker">Exhibit H</p>
+    <h2>Card Sorting</h2>
+    <div class="meta-grid three-up">
+      <div class="meta-card">
+        <span class="meta-num">Method</span>
+        <p>Open card sort</p>
+      </div>
+      <div class="meta-card">
+        <span class="meta-num">Participants</span>
+        <p>11 students</p>
+      </div>
+      <div class="meta-card">
+        <span class="meta-num">Items</span>
+        <p>20 content items</p>
+      </div>
+    </div>
+    <p class="lead-text small">
+      Participants created their own groups and placed the 20 items according to their
+      own understanding, with no predefined categories provided.
+    </p>
+    <figure class="artefact wide">
+      <a href="#lb-cardsort" class="thumb-link">
+        <img src="images/card-sort.jpg" alt="Handwritten notes documenting the open card sort method, patterns found, and overall findings">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>Card sort method, patterns &amp; overall findings</figcaption>
+    </figure>
+    <h3 class="sub-h">Patterns found</h3>
+    <div class="pattern-grid">
+      <div class="pattern-card">
+        <h4>Shuttle Information &amp; Timing</h4>
+        <p>Schedule, Expected Arrival Time, Next Shuttle Information</p>
+      </div>
+      <div class="pattern-card">
+        <h4>Status &amp; Alerts</h4>
+        <p>Current Status, Delay Notifications, Arrival Alerts, Schedule Change Alerts</p>
+      </div>
+      <div class="pattern-card">
+        <h4>Routes &amp; Trip Planning</h4>
+        <p>Routes, Stops, Travel Time, Journey Planner, Trip Planning, Alternative Travel, Train Timing</p>
+      </div>
+      <div class="pattern-card">
+        <h4>Help &amp; Support</h4>
+        <p>FAQs, Contact / Help, Shuttle Rules, Feedback / Report an Issue</p>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>Variation observed:</strong> “Service Announcements” was placed in
+      different groups by some participants.
+    </div>
+    <p class="lead-text small">
+      <strong>Overall finding:</strong> four major patterns emerged, in this order —
+      Shuttle Information &amp; Timing → Status &amp; Alerts → Routes &amp; Trip
+      Planning → Help &amp; Support.
+    </p>
+  </div>
+</section>
+
+<!-- ============ INFORMATION ARCHITECTURE V1 ============ -->
+<section class="section alt" id="ia">
+  <div class="section-inner">
+    <p class="kicker">Exhibit I</p>
+    <h2>Information Architecture — V1</h2>
+    <p class="lead-text small">
+      The card sort's four emergent groups became the top-level menu structure.
+    </p>
+    <figure class="artefact wide">
+      <a href="#lb-ia" class="thumb-link">
+        <img src="images/ia.jpg" alt="Handwritten V1 information architecture tree with four top-level categories and their sub-items">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>V1 information architecture, derived from the card sort</figcaption>
+    </figure>
+
+    <div class="ia-tree">
+      <div class="ia-branch">
+        <h4>1 · Shuttle Information &amp; Timing</h4>
+        <ul>
+          <li>Shuttle Schedule</li>
+          <li>Expected Arrival Time</li>
+          <li>Next Shuttle Information</li>
+        </ul>
+      </div>
+      <div class="ia-branch">
+        <h4>2 · Status &amp; Alert</h4>
+        <ul>
+          <li>Current Shuttle Status</li>
+          <li>Delay Information</li>
+          <li>Delay Notifications</li>
+          <li>Shuttle Arrival Alerts</li>
+          <li>Schedule Change Alerts</li>
+          <li>Service Announcements</li>
+        </ul>
+      </div>
+      <div class="ia-branch">
+        <h4>3 · Routes &amp; Trip Planning</h4>
+        <ul>
+          <li>Shuttle Routes</li>
+          <li>Shuttle Stops</li>
+          <li>Estimated Travel Time</li>
+          <li>Journey Planning</li>
+          <li>Trip Planning</li>
+          <li>Alternative Travel Information</li>
+          <li>Train Timing Information</li>
+        </ul>
+      </div>
+      <div class="ia-branch">
+        <h4>4 · Help &amp; Support</h4>
+        <ul>
+          <li>Frequently Asked Questions</li>
+          <li>Contact / Help</li>
+          <li>Shuttle Rules</li>
+          <li>Feedback / Report an Issue</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TREE TEST ============ -->
+<section class="section" id="tree-test">
+  <div class="section-inner">
+
+    <p class="kicker">Exhibit J</p>
+    <h2>Tree Test</h2>
+
+    <p class="lead-text small">
+      <strong>Objective:</strong> To test whether users could easily find
+      information in the V1 Information Architecture.
+      <strong>Method:</strong> A tree test was conducted with 5 students
+      using the V1 Information Architecture. They were given 5 tasks and
+      asked to find the relevant information.
+    </p>
+
+    <div class="callout">
+      <strong>Scenario:</strong> Imagine you are waiting for the campus shuttle
+      and need to find information about the next shuttle, its expected arrival
+      time, delays, routes and stops, shuttle rules, and how to report a problem.
+      Use the Information Architecture to find the required information.
+    </div>
+
+    <figure class="artefact wide">
+      <a href="#lb-treetest" class="thumb-link">
+        <img
+          src="images/tree-test.jpg"
+          alt="Handwritten tree test results showing five tasks completed successfully by five participants"
+        >
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>Tree test results, 5 participants × 5 tasks</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Successful</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Find next shuttle arrival</td>
+            <td class="pass">5 / 5</td>
+          </tr>
+          <tr>
+            <td>Find shuttle delay information</td>
+            <td class="pass">5 / 5</td>
+          </tr>
+          <tr>
+            <td>Find shuttle routes &amp; stops</td>
+            <td class="pass">5 / 5</td>
+          </tr>
+          <tr>
+            <td>Find shuttle rules</td>
+            <td class="pass">5 / 5</td>
+          </tr>
+          <tr>
+            <td>Report a shuttle problem</td>
+            <td class="pass">5 / 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-success">
+      <strong>Finding:</strong> All 5 participants successfully completed
+      all 5 tasks. The V1 Information Architecture was clear and easy to
+      navigate, so no major changes were required.
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ IA VALIDATION ============ -->
+<section class="section alt" id="ia-validation">
+  <div class="section-inner narrow">
+    <p class="kicker">Exhibit J (cont.)</p>
+    <h2>IA Validation / Final IA</h2>
+    <div class="callout callout-success">
+      <strong>No major structural changes were required</strong> because all 5
+      participants successfully completed the tree test tasks. The V1 information
+      architecture is therefore also the validated, final information architecture
+      carried forward into prioritization.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHASE 3 DIVIDER ============ -->
+<div class="phase-divider phase-3" id="phase3">
+  <div class="phase-divider-inner">
+    <span class="phase-num">Phase 03</span>
+    <h2>Prioritization</h2>
+    <p>Decide what ships first, and defend the decision with evidence.</p>
+  </div>
+</div>
+
+<!-- ============ MOSCOW ============ -->
+<section class="section" id="moscow">
+  <div class="section-inner">
+    <p class="kicker">Exhibit K</p>
+    <h2>MoSCoW Prioritization</h2>
+    <p class="lead-text small">
+      Features were prioritized based on their importance in reducing shuttle-delay
+      uncertainty and improving the user's experience.
+    </p>
+    <figure class="artefact wide">
+      <a href="#lb-moscow" class="thumb-link">
+        <img src="images/moscow.jpg" alt="Handwritten MoSCoW prioritization table with Must Have, Should Have, Could Have and Won't Have columns">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>MoSCoW prioritization of all 20 items</figcaption>
+    </figure>
+    <div class="moscow-grid">
+      <div class="moscow-col must">
+        <h4>Must Have</h4>
+        <ul>
+          <li>Current Shuttle Status</li>
+          <li>Expected Arrival Time</li>
+          <li>Delay Information</li>
+          <li>Shuttle Arrival Alerts</li>
+        </ul>
+        <span class="moscow-tag">Exactly 4 — competed further in DFV below</span>
+      </div>
+      <div class="moscow-col should">
+        <h4>Should Have</h4>
+        <ul>
+          <li>Shuttle Schedule</li>
+          <li>Next Shuttle Information</li>
+          <li>Delay Notification</li>
+          <li>Schedule Change Alerts</li>
+          <li>Shuttle Route</li>
+          <li>Estimated Travel Time</li>
+          <li>Shuttle Stops</li>
+          <li>Service Announcements</li>
+        </ul>
+      </div>
+      <div class="moscow-col could">
+        <h4>Could Have</h4>
+        <ul>
+          <li>Journey Planner</li>
+          <li>Trip Planner</li>
+          <li>Alternative Travel Information</li>
+          <li>Train Timing Information</li>
+          <li>Frequently Asked Questions</li>
+          <li>Shuttle Rules</li>
+        </ul>
+      </div>
+      <div class="moscow-col wont">
+        <h4>Won't Have</h4>
+        <ul>
+          <li>Contact / Help</li>
+          <li>Feedback / Report an Issue</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DFV MATRIX ============ -->
+<section class="section alt" id="dfv">
+  <div class="section-inner">
+    <p class="kicker">Exhibit L</p>
+    <h2>DFV Matrix</h2>
+    <p class="lead-text small">
+      Two features were genuinely difficult to choose between for the final Must-Have
+      slot: <strong>Shuttle Arrival Alerts</strong> and <strong>Schedule Change
+      Alerts</strong>. They were scored against Desirability, Feasibility and
+      Viability, on a scale of 1 (low) to 5 (high).
+    </p>
+    <figure class="artefact wide">
+      <a href="#lb-dfv" class="thumb-link">
+        <img src="images/dfv.jpg" alt="Handwritten DFV matrix comparing Shuttle Arrival Alerts and Schedule Change Alerts across Desirability, Feasibility and Viability">
+        <span class="enlarge-tag">Click to enlarge</span>
+      </a>
+      <figcaption>DFV matrix — the two competing Must-Have candidates</figcaption>
+    </figure>
+    <div class="table-scroll">
+      <table class="results-table dfv-table">
+        <thead>
+          <tr><th>Feature</th><th>D</th><th>F</th><th>V</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shuttle Arrival Alerts</td><td>5</td><td>4</td><td>5</td><td>14</td>
+          </tr>
+          <tr class="winner-row">
+            <td>Schedule Change Alerts <span class="win-badge">Winner</span></td>
+            <td>5</td><td>5</td><td>5</td><td><strong>15</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout callout-success">
+      <strong>Conclusion:</strong> Schedule Change Alerts was selected because users
+      felt that knowing about schedule changes in advance would help them plan their
+      day and avoid unexpected delays.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL MVP ============ -->
+<section class="section mvp-section" id="mvp">
+  <div class="section-inner">
+    <p class="kicker">Prioritized outcome</p>
+    <h2>Final MVP / Prioritized Must-Haves</h2>
+    <p class="lead-text small">
+      The final four Must-Have items, carried forward from research through
+      prioritization. These describe <em>what information matters most</em> — not a
+      finished, built application.
+    </p>
+    <div class="mvp-grid">
+      <div class="mvp-card">
+        <span class="mvp-index">01</span>
+        <h3>Current Shuttle Status</h3>
+        <p>Removes the uncertainty of not knowing where the shuttle is right now.</p>
+      </div>
+      <div class="mvp-card">
+        <span class="mvp-index">02</span>
+        <h3>Expected Arrival Time</h3>
+        <p>Lets students judge how long they actually need to wait.</p>
+      </div>
+      <div class="mvp-card">
+        <span class="mvp-index">03</span>
+        <h3>Delay Information</h3>
+        <p>Answers the exact question asked in the field: “does this always get late?”</p>
+      </div>
+      <div class="mvp-card highlight">
+        <span class="mvp-index">04</span>
+        <h3>Schedule Change Alerts</h3>
+        <p>DFV-matrix winner — advance notice that lets students re-plan their day
+          before a delay happens, not after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCLUSION ============ -->
+<section class="section conclusion" id="conclusion">
+  <div class="section-inner narrow">
+    <p class="kicker">Reflection</p>
+    <h2>Conclusion</h2>
+    <p class="lead-text">
+      Field observation of three real students revealed that the campus shuttle's
+      core problem was not a lack of technology, but a lack of reliable information
+      during unpredictable waits. The empathy map and journey map located the lowest
+      emotional point precisely at the "Wait" and "Ask" stages — the moments with no
+      information at all. That single pain point produced three user stories, which
+      in turn produced twenty candidate content items. Card sorting with eleven
+      students and a tree test with five students validated a four-category
+      information structure without requiring any changes. MoSCoW and a DFV matrix
+      then narrowed twenty items down to four evidence-backed must-haves, with
+      Schedule Change Alerts winning the closest contest because it addresses the
+      uncertainty — not just the delay itself. The research shaped every decision in
+      this document; no solution was assumed before the users were understood.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>UX Case Study · Campus Shuttle Service · Ganesh Oraon · 2024SEPVUAP0096</p>
+</footer>
+
+<!-- ============ PURE-CSS LIGHTBOXES ============ -->
+<a href="#" id="lb-observation" class="lightbox"><img src="images/observation-log.jpg" alt="Enlarged observation log"></a>
+<a href="#" id="lb-proto" class="lightbox"><img src="images/proto-persona.jpg" alt="Enlarged proto persona"></a>
+<a href="#" id="lb-persona1" class="lightbox"><img src="images/user-persona-1.jpg" alt="Enlarged user persona page 1"></a>
+<a href="#" id="lb-persona2" class="lightbox"><img src="images/user-persona-2.jpg" alt="Enlarged user persona page 2"></a>
+<a href="#" id="lb-empathy" class="lightbox"><img src="images/empathy-map.jpg" alt="Enlarged empathy map"></a>
+<a href="#" id="lb-journey" class="lightbox"><img src="images/journey-map.jpg" alt="Enlarged journey map"></a>
+<a href="#" id="lb-stories" class="lightbox"><img src="images/pain-point-stories.jpg" alt="Enlarged pain point and user stories"></a>
+<a href="#" id="lb-features" class="lightbox"><img src="images/features.jpg" alt="Enlarged feature list"></a>
+<a href="#" id="lb-cardsort" class="lightbox"><img src="images/card-sort.jpg" alt="Enlarged card sort notes"></a>
+<a href="#" id="lb-ia" class="lightbox"><img src="images/ia.jpg" alt="Enlarged information architecture"></a>
+<a href="#" id="lb-treetest" class="lightbox"><img src="images/tree-test.jpg" alt="Enlarged tree test results"></a>
+<a href="#" id="lb-moscow" class="lightbox"><img src="images/moscow.jpg" alt="Enlarged MoSCoW table"></a>
+<a href="#" id="lb-dfv" class="lightbox"><img src="images/dfv.jpg" alt="Enlarged DFV matrix"></a>
+
+</body>
+</html>
